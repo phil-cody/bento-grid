@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-media__hero {
+  font-family: "DM Sans" Medium, sans-serif;
+  font-size: 62px;
+  line-height: 93.5%;
+  letter-spacing: -3px;
+  border: 1px solid #000;
+}/*# sourceMappingURL=main.css.map */

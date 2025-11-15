@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.block {
+  margin: 32px 16px;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.bento__social-media {
+  background-color: #7551DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.social-media__hero {
+  font-family: DM Sans Medium, sans-serif;
+  font-size: 62px;
+  line-height: 93.5%;
+  letter-spacing: -3px;
+  padding: 40px 16px 24px 16px;
+  text-align: center;
+}
+
+.social-media__hero--yellow-text {
+  color: #FFCC6A;
+}
+
+/*# sourceMappingURL=main.css.map */

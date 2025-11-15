@@ -1,0 +1,40 @@
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@mixin text-preset-1 {
+	font-family: DM Sans Medium, sans-serif;
+	font-size: 62px;
+	line-height: 93.5%;
+	letter-spacing: -3px;
+}
+
+@mixin text-preset-2 {
+	font-family: DM Sans Medium, sans-serif;
+	font-size: 40px;
+	line-height: 90%;
+	letter-spacing: -2px;
+}
+
+@mixin text-preset-3 {
+	font-family: DM Sans Medium, sans-serif;
+	font-size: 32px;
+	line-height: 87.5%;
+	letter-spacing: -2px;
+}
+
+@mixin text-preset-4 {
+	font-family: DM Sans Regular, sans-serif;
+	font-size: 18px;
+	line-height: 111%;
+	letter-spacing: 0px;
+}
+
+@mixin block {
+	margin: 32px 16px;
+	border-radius: 10px;
+	padding: 16px;
+}
