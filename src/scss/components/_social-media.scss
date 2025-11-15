@@ -1,0 +1,32 @@
+@use '../importer' as i;
+
+.social-media {
+	background-color: i.$purple-500;
+	@include i.flex-center;
+	@include i.block;
+	color: i.$white;
+	max-width: 343px;
+	min-width: 343px;
+	width: 100%;
+
+	&__hero {
+	@include i.m-text-preset-1;
+	text-align: center;
+	margin: 40px 16px 24px;
+
+		&--yellow-text {
+			color: i.$yellow-500;
+		}
+	}
+
+	.bento__rate {
+		width: fit-content;
+		@include i.flex-center;
+		margin-bottom: 40px;
+		gap: 8px;
+	}
+
+	&__description {
+		@include i.text-preset-4;
+	}
+}

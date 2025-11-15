@@ -1,31 +1,10 @@
-@use 'variables' as v;
-@use 'mixins' as m;
-
-* {
-	margin: 0;
-	padding: 0;
-}
+@use 'importer' as i;
+@use 'components' as *;
 
 .bento {
-	@include m.flex-center;
+	@include i.flex-center;
+	max-width: 375px;
+	margin: 40px auto;
+	gap: 32px;
 }
 
-.block {
-	@include m.block;
-}
-
-.bento__social-media {
-	background-color: v.$purple-500;
-	@include m.flex-center;
-	color: v.$white;
-}
-
-.social-media__hero {
-	@include m.text-preset-1;
-	padding: 40px 16px 24px 16px;
-	text-align: center;
-}
-
-.social-media__hero--yellow-text {
-	color: v.$yellow-500;
-}

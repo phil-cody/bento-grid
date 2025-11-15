@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -13,12 +13,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.social-media__hero {
-  font-family: "DM Sans" Medium, sans-serif;
-  font-size: 62px;
-  line-height: 93.5%;
-  letter-spacing: -3px;
-  border: 1px solid #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
