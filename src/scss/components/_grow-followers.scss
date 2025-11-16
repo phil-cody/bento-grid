@@ -1,0 +1,175 @@
+@use '../importer' as i;
+
+.grow-followers {
+	@include i.block;
+	@include i.flex-center;
+	gap: 40px;
+	background-color: i.$purple-500;
+	max-width: 343px;
+	width: 343px;
+	padding: 24px;
+
+	&__blocks {
+		max-width: 228px;
+		width: 228px;
+		max-height: 200px;
+		height: 200px;
+		position: relative;
+
+		&--graphs {
+			@include i.block;
+			background-color: i.$white;
+			padding: 26px;
+			width: 196px;
+			height: 188px;
+
+			.graphs {
+				display: flex;
+				flex-direction: column;
+				gap: 13px;
+
+				&__text {
+					display: flex;
+					flex-direction: column;
+					gap: 5px;
+				}
+
+				&__header {
+					font-family: DM Sans Regular, sans-serif;
+					font-size: 14px;
+					letter-spacing: -0.03em;
+					font-weight: 400;
+					color: #9E9E9E;
+				}
+
+				&__numbers {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				&__followers {
+					@include i.m-text-preset-3;
+				}
+
+				&__growth {
+					background-color: #DAFFE9;
+					height: fit-content;
+					border-radius: 9px;
+				}
+
+				&__growth p {
+					font-family: DM Sans Medium, sans-serif;
+					font-size: 8px;
+					line-height: 12px;
+					letter-spacing: -0.05em;
+					color: #0E803B;
+					margin: 3px 7px;
+				}
+
+				&__content {
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-end;
+
+					&-item1 {
+						@include i.scale;
+						height: 44px;
+					}
+
+					&-item2 {
+						@include i.scale;
+						height: 54px;
+					}
+
+					&-item3 {
+						@include i.scale;
+						height: 59px;
+					}
+
+					&-item4 {
+						@include i.scale;
+						height: 75px;
+					}
+
+					&-item5 {
+						@include i.scale;
+						height: 75px;
+					}
+				}
+			}
+		}
+
+		&--notice {
+			width: 181px;
+			height: 68px;
+			border-radius: 34px;
+			background-color: i.$white;
+			position: absolute;
+			top: 130px;
+			left: 50px;
+
+			.notice {
+				display: flex;
+				flex-direction: row;
+				gap: 7px;
+				padding: 13px;
+
+				&--background {
+					@include i.flex-center;
+					background-color: i.$yellow-500;
+					min-width: 42px;
+					min-height: 42px;
+					border-radius: 100%;
+				}
+
+				&__info-wrap {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+				}
+
+				&__text {
+					font-family: DM Sans Regular, sans-serif;
+					font-size: 14px;
+					letter-spacing: -0.03em;
+					font-weight: 400;
+					color: #9E9E9E;
+				}
+
+				&__info {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				&__numbers {
+					@include i.m-text-preset-3;
+					font-size: 20px;
+				}
+
+				&__growth {
+					background-color: #DAFFE9;
+					height: fit-content;
+					border-radius: 9px;
+				}
+
+				&__growth p {
+					font-family: DM Sans Medium, sans-serif;
+					font-size: 8px;
+					line-height: 12px;
+					letter-spacing: -0.05em;
+					color: #0E803B;
+					margin: 3px 7px;
+				}
+			}
+		}
+	}
+
+	&__text {
+		@include i.m-text-preset-2;
+		color: i.$white;
+		font-weight: 500;
+		text-align: center;
+	}
+}
