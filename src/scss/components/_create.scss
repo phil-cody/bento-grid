@@ -1,0 +1,55 @@
+@use '../importer' as i;
+
+.create {
+	@include i.block;
+	background-color: i.$yellow-100;
+	max-width: 343px;
+	width: 343px;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	&__header {
+		@include i.m-text-preset-2;
+		font-weight: 500;
+		color: i.$black;
+	}
+
+	&__dedicated-text {
+		color: i.$purple-500;
+	}
+
+	&__image {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		&-button {
+			display: flex;
+			gap: 10px;
+			background-color: i.$yellow-500;
+			width: fit-content;
+			padding: 17px 26px;
+			border-radius: 28px;
+
+			.button__text {
+				@include i.text-preset-4;
+				line-height: auto;
+				font-weight: 600;
+				color: i.$purple-500;
+			}
+		}
+		
+		&-cursor {
+			width: 35px;
+			height: 36px;
+			position: relative;
+			left: 78px;
+			top: -5px;
+		}
+	}
+}
+
+
+
