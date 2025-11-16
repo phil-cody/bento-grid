@@ -1,0 +1,120 @@
+@use '../importer' as i;
+
+.write-your-content {
+	@include i.block;
+	max-width: 343px;
+	width: 343px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	background-color: i.$yellow-500;
+
+	&__header {
+		@include i.m-text-preset-2;
+		font-weight: 500;
+	}
+
+	&__content {
+		.content {
+			width: 220px;
+			position: relative;
+
+			&__chat {
+				width: 204px;
+				background-color: i.$white;
+				@include i.block;
+				display: flex;
+				flex-direction: column;
+				gap: 25px;
+				padding: 16px;
+
+				p {
+							font-family: DM Sans Regular, sans-serif;
+							font-size: 12px;
+							font-weight: 400;
+							line-height: 18px;
+						}
+
+				&-up {
+					display: flex;
+					justify-content: space-between;
+					gap: 7px;
+
+					.user-message {
+						@include i.block;
+						background-color: #FFEDED;
+						text-align: right;
+						padding: 7px 16px;
+					}
+
+					.user-avatar {
+						background-color: i.$purple-100;
+						overflow: hidden;
+						min-width: 34px;
+						height: 34px;
+						border-radius: 100%;
+
+						img {
+							width: 34px;
+							height: 34px;
+						}
+					}
+				}
+
+				&-down {
+					display: flex;
+					justify-content: space-between;
+					gap: 7px;
+
+					.ai-message {
+						@include i.block;
+						background-color: #FCEBD1;
+						text-align: left;
+						padding: 7px 16px;
+						overflow: hidden;
+						height: 97px;
+					}
+
+					.ai-avatar {
+						background-color: i.$purple-100;
+						overflow: hidden;
+						min-width: 34px;
+						height: 34px;
+						border-radius: 100%;
+						@include i.flex-center;
+
+						img {
+							width: 17px;
+							height: 17px;
+						}
+					}
+				}
+			}
+
+			&__button {
+				background-color: i.$white;
+				width: 89px;
+				height: 89px;
+				border-radius: 100%;
+				@include i.flex-center;
+				position: absolute;
+				top: 50px;
+				left: 131px;
+
+				&-background {
+					width: 54px;
+					height: 54px;
+					background-color: i.$yellow-500;
+					border-radius: 100%;
+					@include i.flex-center;
+				}
+
+				&-up-arrow {
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+	}
+}

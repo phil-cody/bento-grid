@@ -628,6 +628,120 @@ p {
   top: -5px;
 }
 
+.write-your-content {
+  border-radius: 10px;
+  max-width: 343px;
+  width: 343px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #FFCC6A;
+}
+.write-your-content__header {
+  font-family: DM Sans Medium, sans-serif;
+  font-size: 32px;
+  line-height: 28px;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+}
+.write-your-content__content .content {
+  width: 220px;
+  position: relative;
+}
+.write-your-content__content .content__chat {
+  width: 204px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 16px;
+}
+.write-your-content__content .content__chat p {
+  font-family: DM Sans Regular, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.write-your-content__content .content__chat-up {
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+.write-your-content__content .content__chat-up .user-message {
+  border-radius: 10px;
+  background-color: #FFEDED;
+  text-align: right;
+  padding: 7px 16px;
+}
+.write-your-content__content .content__chat-up .user-avatar {
+  background-color: #DBD1FC;
+  overflow: hidden;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 100%;
+}
+.write-your-content__content .content__chat-up .user-avatar img {
+  width: 34px;
+  height: 34px;
+}
+.write-your-content__content .content__chat-down {
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+.write-your-content__content .content__chat-down .ai-message {
+  border-radius: 10px;
+  background-color: #FCEBD1;
+  text-align: left;
+  padding: 7px 16px;
+  overflow: hidden;
+  height: 97px;
+}
+.write-your-content__content .content__chat-down .ai-avatar {
+  background-color: #DBD1FC;
+  overflow: hidden;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.write-your-content__content .content__chat-down .ai-avatar img {
+  width: 17px;
+  height: 17px;
+}
+.write-your-content__content .content__button {
+  background-color: #fff;
+  width: 89px;
+  height: 89px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 131px;
+}
+.write-your-content__content .content__button-background {
+  width: 54px;
+  height: 54px;
+  background-color: #FFCC6A;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.write-your-content__content .content__button-up-arrow {
+  width: 24px;
+  height: 24px;
+}
+
 .bento {
   display: flex;
   align-items: center;
