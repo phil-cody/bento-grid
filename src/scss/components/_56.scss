@@ -1,0 +1,54 @@
+@use '../importer' as i;
+
+.faster {
+	@include i.block;
+	max-width: 343px;
+	width: 343px;
+	padding: 24px;
+	background-color: lightgoldenrodyellow;
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-bottom: 24px;
+
+		&-header {
+			@include i.m-text-preset-1;
+			font-weight: 500;
+		}
+
+		&-description {
+			@include i.text-preset-4;
+		}
+	}
+
+	&__avatars {
+		display: flex;
+		position: relative;
+
+		.avatars-background {
+			width: 67px;
+			height: 67px;
+			border-radius: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		&-item-1 {
+			background-color: i.$purple-100;
+		}
+
+		&-item-2 {
+			background-color: i.$yellow-100;
+			left: -10px;
+			z-index: 1;
+		}
+
+		&-item-3 {
+			background-color: i.$purple-100;
+			left: -10px;
+			z-index: 2;
+		}
+	}
+}
