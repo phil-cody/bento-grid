@@ -220,7 +220,11 @@ p {
   font-weight: 500;
 }
 .schedule__hr {
+  margin-block-start: 0;
+  margin-block-end: 0;
   margin: 12px 0;
+  border-color: #8F8F8F;
+  border-style: solid;
 }
 .schedule__graph {
   border-radius: 10px;
