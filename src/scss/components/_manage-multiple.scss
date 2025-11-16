@@ -2,6 +2,7 @@
 
 .bento__inner {
 	@include i.flex-center;
+	gap: 32px;
 }
 
 .bento__manage-multiple {

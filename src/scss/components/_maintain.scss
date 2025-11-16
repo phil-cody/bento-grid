@@ -1,0 +1,62 @@
+@use '../importer' as i;
+
+.maintain {
+	@include i.block;
+	background-color: i.$yellow-500;
+	padding: 16px 16px 0 16px;
+	max-width: 343px;
+	max-height: 216px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	overflow: hidden;
+
+	&__text {
+		@include i.m-text-preset-3;
+	}
+
+	&__illustrations {
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px 10px 0 0;
+		overflow: hidden;
+		max-width: 208px;
+		max-height: 157px;
+		height: 157px;
+	}
+
+	&__hero {
+		background-color: i.$purple-500;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: i.$white;
+		@include i.m-text-preset-3;
+		font-size: 16px;
+		line-height: 14px;
+	}
+
+	&__hero-date, &__hero-week {
+		margin: 12.5px;
+	}
+
+	&__table {
+		background-color: i.$white;
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+
+		&--cols {
+			margin-top: 17px;
+			@include i.flex-center;
+			gap: 17px;
+		}
+
+		&--cols-square {
+			background-color: i.$yellow-100;
+			height: 23px;
+			width: 23px;
+			border-radius: 4px;
+		}
+	}
+}

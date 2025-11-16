@@ -56,6 +56,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 32px;
 }
 
 .bento__manage-multiple {
@@ -131,6 +132,69 @@ p {
   letter-spacing: -0.06em;
   padding: 16px;
   margin: 0 16px;
+}
+
+.maintain {
+  border-radius: 10px;
+  background-color: #FFCC6A;
+  padding: 16px 16px 0 16px;
+  max-width: 343px;
+  max-height: 216px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+.maintain__text {
+  font-family: DM Sans Medium, sans-serif;
+  font-size: 26px;
+  line-height: 24px;
+  letter-spacing: -0.06em;
+}
+.maintain__illustrations {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  max-width: 208px;
+  max-height: 157px;
+  height: 157px;
+}
+.maintain__hero {
+  background-color: #7551DC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  font-family: DM Sans Medium, sans-serif;
+  font-size: 26px;
+  line-height: 24px;
+  letter-spacing: -0.06em;
+  font-size: 16px;
+  line-height: 14px;
+}
+.maintain__hero-date, .maintain__hero-week {
+  margin: 12.5px;
+}
+.maintain__table {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.maintain__table--cols {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+}
+.maintain__table--cols-square {
+  background-color: #F9EEE2;
+  height: 23px;
+  width: 23px;
+  border-radius: 4px;
 }
 
 .bento {
