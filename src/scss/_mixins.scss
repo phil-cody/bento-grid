@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 // centering elements
 
 @mixin flex-center {
@@ -11,6 +13,14 @@
 
 @mixin block {
 	border-radius: 10px;
+}
+
+// scale's form
+
+@mixin scale {
+	background-color: v.$purple-500;
+	width: 19px;
+	border-radius: 9.5px;
 }
 
 // TYPOGRAPHY

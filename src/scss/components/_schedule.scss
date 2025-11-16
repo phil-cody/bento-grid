@@ -1,0 +1,181 @@
+@use '../importer' as i;
+
+.schedule {
+	@include i.flex-center;
+	@include i.block;
+	justify-content: space-between;
+	padding: 32px 0;
+	gap: 24px;
+	max-width: 343px;
+	width: 343px;
+	background-color: i.$purple-100;
+	position: relative;
+
+	&__header {
+		@include i.m-text-preset-3;
+		font-weight: 500;
+	}
+
+	&__hr {
+		margin: 12px 0;
+	}
+
+	&__graph {
+		@include i.block;
+		background-color: i.$white;
+		padding: 18px;
+
+		&-header {
+
+			&--text {
+				@include i.m-text-preset-3;
+				font-size: 16px;
+				line-height: 24px;
+				letter-spacing: -0.05em;
+			}
+		}
+
+		&-content {
+			font-family: DM Sans, sans-serif;
+			font-size: 12px;
+			line-height: 18px;
+			letter-spacing: 0;
+			color: #8F8F8F;
+			font-weight: 400;
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+
+			&--day {
+				@include i.flex-center;
+				flex-direction: row;
+
+				.day {
+					padding: 3px 7px;
+				}
+
+				.dedicated {
+					@include i.block;
+					background-color: #FFE5E7;
+					color: #DC5172;
+				}
+			}
+
+			&--hours {
+
+				.hours {
+					display: flex;
+					justify-content: space-between;
+					height: 152px;
+					align-items: flex-end;
+
+					.hour {
+						@include i.flex-center;
+						gap: 12px;
+					}
+
+					&__12a {
+
+						&-scale {
+							@include i.scale;
+							height: 37px;
+						}
+
+						&-text {}
+					}
+
+					&__3a {
+
+						&-scale {
+							@include i.scale;
+							height: 50px;
+						}
+
+						&-text {}
+					}
+
+					&__6a {
+
+						&-scale {
+							@include i.scale;
+							height: 96px;
+						}
+
+						&-text {}
+					}
+
+					&__9a {
+
+						&-scale {
+							@include i.scale;
+							height: 76px;
+						}
+
+						&-text {}
+					}
+
+					&__12p {
+
+						&-scale {
+							@include i.scale;
+							height: 55px;
+						}
+
+						&-text {}
+					}
+
+					&__3p {
+
+						&-scale {
+							@include i.scale;
+							height: 66px;
+						}
+
+						&-text {}
+					}
+
+					&__6p {
+
+						&-scale {
+							@include i.scale;
+							height: 92px;
+						}
+
+						&-text {}
+					}
+
+					&__9p {
+
+						&-scale {
+							@include i.scale;
+							height: 61px;
+						}
+
+						&-text {}
+					}
+				}
+			}
+		}
+	}
+
+	&__description {
+		@include i.text-preset-4;
+		text-align: center;
+		max-width: 277px;
+	}
+
+	&__most-active {
+		position: absolute;
+		font-family: DM Sans, sans-serif;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0;
+		color: #0E803B;
+		font-weight: 600;
+		background-color: #DAFFE9;
+		padding: 3px 7px;
+		@include i.block;
+		top: 185px;
+		left: 85px;
+	}
+}
