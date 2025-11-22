@@ -10,10 +10,10 @@
 	width: 100%;
 
 	&__hero {
-	@include i.m-text-preset-1;
-	font-weight: 500;
-	text-align: center;
-	margin: 40px 16px 24px;
+		@include i.m-text-preset-1;
+		font-weight: 500;
+		text-align: center;
+		margin: 40px 16px 24px;
 
 		&--yellow-text {
 			color: i.$yellow-500;
@@ -29,5 +29,21 @@
 
 	&__description {
 		@include i.text-preset-4;
+	}
+}
+
+@media (min-width: 768px) {
+	.social-media {
+		min-width: 688px;
+		max-width: 688px;
+		min-height: 324px;
+		max-height: 324px;
+		grid-row: 1;
+
+		&__hero {
+			@include i.t-text-preset-1;
+			margin: 72px 76px 24px;
+			padding: 0 72px;
+		}
 	}
 }

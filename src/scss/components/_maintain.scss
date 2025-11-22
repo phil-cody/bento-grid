@@ -36,7 +36,8 @@
 		line-height: 14px;
 	}
 
-	&__hero-date, &__hero-week {
+	&__hero-date,
+	&__hero-week {
 		margin: 12.5px;
 	}
 
@@ -58,5 +59,17 @@
 			width: 23px;
 			border-radius: 4px;
 		}
+	}
+}
+
+@media (min-width: 768px) {
+	.maintain {
+		max-width: 328px;
+		max-height: 247px;
+		grid-row: 2;
+	}
+
+	.maintain__text {
+		@include i.t-text-preset-3;
 	}
 }

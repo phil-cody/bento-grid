@@ -8,3 +8,16 @@
 	gap: 32px;
 }
 
+.italic {
+	font-style: italic;
+}
+
+@media (min-width: 768px) {
+	.bento {
+		max-width: 688px;
+		min-width: 688px;
+		display: grid;
+		grid-template-columns: repeat(2, 328px);
+		grid-template-rows: 324px 247px 497px 248px 155px 355px;
+	}
+}

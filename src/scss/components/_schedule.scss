@@ -7,7 +7,7 @@
 	padding: 32px 0;
 	gap: 24px;
 	max-width: 343px;
-	width: 343px;
+	min-width: 343px;
 	background-color: i.$purple-100;
 	position: relative;
 
@@ -28,6 +28,7 @@
 		@include i.block;
 		background-color: i.$white;
 		padding: 18px;
+		position: relative;
 
 		&-header {
 
@@ -67,6 +68,10 @@
 
 			&--hours {
 
+				.scale {
+					@include i.scale;
+				}
+
 				.hours {
 					display: flex;
 					justify-content: space-between;
@@ -81,7 +86,6 @@
 					&__12a {
 
 						&-scale {
-							@include i.scale;
 							height: 37px;
 						}
 					}
@@ -89,7 +93,6 @@
 					&__3a {
 
 						&-scale {
-							@include i.scale;
 							height: 50px;
 						}
 					}
@@ -97,7 +100,6 @@
 					&__6a {
 
 						&-scale {
-							@include i.scale;
 							height: 96px;
 						}
 					}
@@ -105,7 +107,6 @@
 					&__9a {
 
 						&-scale {
-							@include i.scale;
 							height: 76px;
 						}
 					}
@@ -113,7 +114,6 @@
 					&__12p {
 
 						&-scale {
-							@include i.scale;
 							height: 55px;
 						}
 					}
@@ -121,7 +121,6 @@
 					&__3p {
 
 						&-scale {
-							@include i.scale;
 							height: 66px;
 						}
 					}
@@ -129,7 +128,6 @@
 					&__6p {
 
 						&-scale {
-							@include i.scale;
 							height: 92px;
 						}
 					}
@@ -137,7 +135,6 @@
 					&__9p {
 
 						&-scale {
-							@include i.scale;
 							height: 61px;
 						}
 					}
@@ -163,7 +160,37 @@
 		background-color: #DAFFE9;
 		padding: 3px 7px;
 		@include i.block;
-		top: 185px;
-		left: 85px;
+		top: 106px;
+		left: 56px;
+	}
+}
+
+@media (min-width: 768px) {
+	.schedule {
+		max-width: 688px;
+		min-width: 688px;
+		max-height: 497px;
+		min-height: 497px;
+		grid-row: 3;
+
+		&__header {
+			@include i.t-text-preset-3;
+		}
+
+		&__graph {
+			transform: scale(1.1);
+
+			&-header--text {
+				@include i.t-text-preset-3;
+			}
+
+			&-content {
+				font-size: 14px;
+			}
+		}
+
+		&__description {
+			max-width: 340px;
+		}
 	}
 }

@@ -1,10 +1,5 @@
 @use '../importer' as i;
 
-.bento__inner {
-	@include i.flex-center;
-	gap: 32px;
-}
-
 .bento__manage-multiple {
 	@include i.block;
 	@include i.flex-center;
@@ -75,7 +70,19 @@
 	}
 }
 
+@media (min-width: 768px) {
+	.bento__manage-multiple {
+		max-width: 328px;
+		min-width: 328px;
+		max-height: 247px;
+		min-height: 247px;
+		gap: 54px;
+		grid-row: 2;
+	}
 
-
-
-
+	.social-network__description {
+		@include i.t-text-preset-3;
+		margin: 0px 96px 24px 24px;
+		padding: 0;
+	}
+}

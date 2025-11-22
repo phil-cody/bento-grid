@@ -40,7 +40,7 @@
 				color: i.$purple-500;
 			}
 		}
-		
+
 		&-cursor {
 			width: 35px;
 			height: 36px;
@@ -51,5 +51,17 @@
 	}
 }
 
+@media (min-width: 768px) {
+	.create {
+		max-width: 328px;
+		min-width: 328px;
+		max-height: 355px;
+		min-height: 355px;
+		justify-content: center;
+		grid-row: 6;
 
-
+		&__header {
+			@include i.t-text-preset-2;
+		}
+	}
+}

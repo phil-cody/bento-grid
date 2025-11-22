@@ -15,8 +15,6 @@
 	border-radius: 10px;
 }
 
-// scale's form
-
 @mixin scale {
 	background-color: v.$purple-500;
 	width: 19px;
@@ -68,7 +66,7 @@
 @mixin t-text-preset-2 {
 	font-family: DM Sans Medium, sans-serif;
 	font-size: 36px;
-	line-height: 30%;
+	line-height: 30px;
 	letter-spacing: -0.06em;
 }
 
