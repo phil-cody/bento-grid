@@ -40,5 +40,5 @@
  Личный проект для портфолио
 
 ## Контакты
- Telegram: @philcody
- email: antaress07@icloud.com
+ Telegram: @philcody  
+ Email: antaress07@icloud.com
