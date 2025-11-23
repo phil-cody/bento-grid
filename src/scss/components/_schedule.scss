@@ -40,7 +40,7 @@
 		}
 
 		&-content {
-			font-family: DM Sans, sans-serif;
+			font-family: "DM Sans", sans-serif;
 			font-size: 12px;
 			line-height: 18px;
 			letter-spacing: 0;
@@ -150,7 +150,7 @@
 
 	&__most-active {
 		position: absolute;
-		font-family: DM Sans, sans-serif;
+		font-family: "DM Sans", sans-serif;
 		font-size: 12px;
 		line-height: 18px;
 		letter-spacing: 0;
@@ -197,8 +197,7 @@
 	.schedule {
 		min-width: 0;
 		max-width: 100%;
-		width: 100%;
-		height: 100%;
+		@include i.full-size;
 		grid-row: 1 / 4;
 		grid-column: 4;
 		display: flex;

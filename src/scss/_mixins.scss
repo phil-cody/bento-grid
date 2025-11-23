@@ -100,3 +100,50 @@
 	letter-spacing: -2px;
 }
 
+// Полный размер для desktop
+@mixin full-size {
+	width: 100%;
+	height: 100%;
+}
+
+// Растяжение в grid
+@mixin stretch {
+	justify-self: stretch;
+	align-self: stretch;
+}
+
+// Круглая форма
+@mixin circle {
+	border-radius: 100%;
+}
+
+// Полная ширина для tablet
+@mixin tablet-full-width {
+	max-width: $tablet-max-width;
+	min-width: $tablet-max-width;
+}
+
+// Базовые стили для аватаров
+@mixin avatar-base {
+	background-color: i.$purple-100;
+	overflow: hidden;
+	min-width: 34px;
+	height: 34px;
+	@include i.circle;
+}
+
+// Стили для индикаторов роста (зеленый badge)
+@mixin growth-badge {
+	background-color: i.$green-100;
+	height: fit-content;
+	border-radius: 9px;
+
+	p {
+		font-family: "DM Sans Medium", sans-serif;
+		font-size: 8px;
+		line-height: 12px;
+		letter-spacing: -0.05em;
+		color: i.$green-600;
+		margin: 3px 7px;
+	}
+}

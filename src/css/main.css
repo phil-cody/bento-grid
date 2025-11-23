@@ -161,7 +161,7 @@ img {
   font-family: DM Sans Regular, sans-serif;
   font-size: 12px;
   color: #9E9E9E;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.03em;
   white-space: nowrap;
 }
@@ -850,7 +850,7 @@ img {
   line-height: 20px;
   letter-spacing: 0px;
   font-weight: 100;
-  line-height: auto;
+  line-height: normal;
   font-weight: 600;
   color: #7551DC;
 }

@@ -31,7 +31,7 @@
 			min-width: 42px;
 			min-height: 42px;
 			background-color: i.$yellow-500;
-			border-radius: 100%;
+			@include i.circle;
 			position: relative;
 			@include i.flex-center;
 		}
@@ -47,7 +47,7 @@
 	}
 
 	&__name {
-		font-family: DM Sans Medium, sans-serif;
+		font-family: "DM Sans Medium", sans-serif;
 		font-size: 16px;
 		color: i.$black;
 		line-height: 90%;
@@ -55,10 +55,10 @@
 	}
 
 	&__follower {
-		font-family: DM Sans Regular, sans-serif;
+		font-family: "DM Sans Regular", sans-serif;
 		font-size: 12px;
 		color: i.$gray-400;
-		line-height: auto;
+		line-height: normal;
 		letter-spacing: -0.03em;
 		white-space: nowrap;
 	}
