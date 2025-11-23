@@ -2,7 +2,7 @@
 @use 'components' as *;
 
 .bento {
-	@include i.flex-center;
+	display: grid;
 	max-width: 375px;
 	margin: 40px auto;
 	gap: 32px;
@@ -15,9 +15,17 @@
 @media (min-width: 768px) {
 	.bento {
 		max-width: 688px;
-		min-width: 688px;
-		display: grid;
+		width: 100%;
 		grid-template-columns: repeat(2, 328px);
 		grid-template-rows: 324px 247px 497px 248px 155px 355px;
+	}
+}
+
+@media (min-width: 1488px) {
+	.bento {
+		max-width: 1408px;
+		width: 100%;
+		grid-template-columns: repeat(4, 328px);
+		grid-template-rows: 324px 132px 210px 246px;
 	}
 }
