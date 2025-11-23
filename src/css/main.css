@@ -1,12 +1,27 @@
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-p, h1, h2 {
+p, h1, h2, h3, h4, h5, h6 {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+body {
+  padding: 0 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .social-media {
@@ -17,12 +32,11 @@ p, h1, h2 {
   flex-direction: column;
   border-radius: 10px;
   color: #fff;
-  max-width: 343px;
-  min-width: 343px;
+  max-width: 100%;
   width: 100%;
 }
 .social-media__hero {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 46px;
   line-height: 42px;
   letter-spacing: -0.04em;
@@ -43,7 +57,7 @@ p, h1, h2 {
   gap: 8px;
 }
 .social-media__description {
-  font-family: DM Sans Regular, sans-serif;
+  font-family: "DM Sans Regular", sans-serif;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0px;
@@ -59,7 +73,7 @@ p, h1, h2 {
     grid-row: 1;
   }
   .social-media__hero {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 54px;
     line-height: 48px;
     letter-spacing: -0.04em;
@@ -75,7 +89,7 @@ p, h1, h2 {
     grid-column: 2/4;
   }
   .social-media__hero {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 62px;
     line-height: 58px;
     letter-spacing: -3px;
@@ -91,7 +105,7 @@ p, h1, h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 343px;
+  max-width: 100%;
   width: 100%;
   background-color: #fff;
 }
@@ -152,7 +166,7 @@ p, h1, h2 {
   white-space: nowrap;
 }
 .social-network__description {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 26px;
   line-height: 24px;
   letter-spacing: -0.06em;
@@ -168,7 +182,7 @@ p, h1, h2 {
     grid-row: 2;
   }
   .social-network__description {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 28px;
     line-height: 26px;
     letter-spacing: -0.06em;
@@ -187,7 +201,7 @@ p, h1, h2 {
     margin: 0 auto;
   }
   .social-network__description {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 32px;
     line-height: 28px;
     letter-spacing: -2px;
@@ -202,15 +216,14 @@ p, h1, h2 {
   border-radius: 10px;
   background-color: #FFCC6A;
   padding: 16px 16px 0 16px;
-  max-width: 343px;
-  max-height: 216px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 16px;
   overflow: hidden;
 }
 .maintain__text {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 26px;
   line-height: 24px;
   letter-spacing: -0.06em;
@@ -230,7 +243,7 @@ p, h1, h2 {
   flex-direction: row;
   justify-content: space-between;
   color: #fff;
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 26px;
   line-height: 24px;
   letter-spacing: -0.06em;
@@ -268,7 +281,7 @@ p, h1, h2 {
     grid-row: 2;
   }
   .maintain__text {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 28px;
     line-height: 26px;
     letter-spacing: -0.06em;
@@ -287,7 +300,7 @@ p, h1, h2 {
     justify-content: space-between;
   }
   .maintain__text {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 40px;
     line-height: 36px;
     letter-spacing: -2px;
@@ -310,12 +323,12 @@ p, h1, h2 {
   justify-content: space-between;
   padding: 32px 0;
   gap: 24px;
-  max-width: 343px;
+  max-width: 100%;
   background-color: #DBD1FC;
   position: relative;
 }
 .schedule__header {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 26px;
   line-height: 24px;
   letter-spacing: -0.06em;
@@ -335,7 +348,7 @@ p, h1, h2 {
   position: relative;
 }
 .schedule__graph-header--text {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 26px;
   line-height: 24px;
   letter-spacing: -0.06em;
@@ -412,7 +425,7 @@ p, h1, h2 {
   height: 61px;
 }
 .schedule__description {
-  font-family: DM Sans Regular, sans-serif;
+  font-family: "DM Sans Regular", sans-serif;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0px;
@@ -439,10 +452,11 @@ p, h1, h2 {
   .schedule {
     max-width: 100%;
     max-height: 100%;
+    grid-column: 1/3;
     grid-row: 3;
   }
   .schedule__header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 28px;
     line-height: 26px;
     letter-spacing: -0.06em;
@@ -451,7 +465,7 @@ p, h1, h2 {
     transform: scale(1.1);
   }
   .schedule__graph-header--text {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 28px;
     line-height: 26px;
     letter-spacing: -0.06em;
@@ -478,7 +492,7 @@ p, h1, h2 {
     padding: 24px;
   }
   .schedule__header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 32px;
     line-height: 28px;
     letter-spacing: -2px;
@@ -488,7 +502,7 @@ p, h1, h2 {
     min-height: 0;
   }
   .schedule__graph-header--text {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 32px;
     line-height: 28px;
     letter-spacing: -2px;
@@ -513,8 +527,7 @@ p, h1, h2 {
   flex-direction: column;
   gap: 40px;
   background-color: #7551DC;
-  max-width: 343px;
-  min-width: 343px;
+  max-width: 100%;
   padding: 24px;
 }
 .grow-followers__blocks {
@@ -554,7 +567,7 @@ p, h1, h2 {
   align-items: center;
 }
 .grow-followers__blocks--graphs .graphs__followers {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 26px;
   line-height: 24px;
   letter-spacing: -0.06em;
@@ -650,7 +663,7 @@ p, h1, h2 {
   align-items: center;
 }
 .grow-followers__blocks--notice .notice__numbers {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 26px;
   line-height: 24px;
   letter-spacing: -0.06em;
@@ -670,7 +683,7 @@ p, h1, h2 {
   margin: 3px 7px;
 }
 .grow-followers__text {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 32px;
   line-height: 28px;
   letter-spacing: -0.06em;
@@ -687,7 +700,7 @@ p, h1, h2 {
     grid-row: 4;
   }
   .grow-followers__text {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 36px;
     line-height: 30px;
     letter-spacing: -0.06em;
@@ -705,7 +718,7 @@ p, h1, h2 {
     grid-column: 3/5;
   }
   .grow-followers__text {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 36px;
     line-height: 30px;
     letter-spacing: -0.06em;
@@ -716,8 +729,7 @@ p, h1, h2 {
 }
 .faster {
   border-radius: 10px;
-  max-width: 343px;
-  width: 343px;
+  max-width: 100%;
   padding: 24px;
 }
 .faster__text {
@@ -727,14 +739,14 @@ p, h1, h2 {
   margin-bottom: 24px;
 }
 .faster__text-header {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 46px;
   line-height: 42px;
   letter-spacing: -0.04em;
   font-weight: 500;
 }
 .faster__text-description {
-  font-family: DM Sans Regular, sans-serif;
+  font-family: "DM Sans Regular", sans-serif;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0px;
@@ -775,7 +787,7 @@ p, h1, h2 {
     grid-row: 5;
   }
   .faster__text-header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 54px;
     line-height: 48px;
     letter-spacing: -0.04em;
@@ -791,7 +803,7 @@ p, h1, h2 {
     grid-column: 2/3;
   }
   .faster__text-header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 62px;
     line-height: 58px;
     letter-spacing: -3px;
@@ -800,15 +812,14 @@ p, h1, h2 {
 .create {
   border-radius: 10px;
   background-color: #F9EEE2;
-  max-width: 343px;
-  width: 343px;
+  max-width: 100%;
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .create__header {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 32px;
   line-height: 28px;
   letter-spacing: -0.06em;
@@ -834,7 +845,7 @@ p, h1, h2 {
   border-radius: 28px;
 }
 .create__image-button .button__text {
-  font-family: DM Sans Regular, sans-serif;
+  font-family: "DM Sans Regular", sans-serif;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0px;
@@ -861,7 +872,7 @@ p, h1, h2 {
     grid-row: 6;
   }
   .create__header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 36px;
     line-height: 30px;
     letter-spacing: -0.06em;
@@ -880,7 +891,7 @@ p, h1, h2 {
     align-items: stretch;
   }
   .create__header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 40px;
     line-height: 36px;
     letter-spacing: -2px;
@@ -890,7 +901,7 @@ p, h1, h2 {
 .write-your-content {
   border-radius: 10px;
   width: 100%;
-  max-width: 343px;
+  max-width: 100%;
   height: 100%;
   justify-self: stretch;
   align-self: stretch;
@@ -903,7 +914,7 @@ p, h1, h2 {
   background-color: #FFCC6A;
 }
 .write-your-content__header {
-  font-family: DM Sans Medium, sans-serif;
+  font-family: "DM Sans Medium", sans-serif;
   font-size: 32px;
   line-height: 28px;
   letter-spacing: -0.06em;
@@ -1013,7 +1024,7 @@ p, h1, h2 {
     grid-row: 6;
   }
   .write-your-content__header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 36px;
     line-height: 30px;
     letter-spacing: -0.06em;
@@ -1026,7 +1037,7 @@ p, h1, h2 {
     grid-column: 1/2;
   }
   .write-your-content__header {
-    font-family: DM Sans Medium, sans-serif;
+    font-family: "DM Sans Medium", sans-serif;
     font-size: 40px;
     line-height: 36px;
     letter-spacing: -2px;

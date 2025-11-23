@@ -5,8 +5,7 @@
 	@include i.flex-center;
 	@include i.block;
 	color: i.$white;
-	max-width: 343px;
-	min-width: 343px;
+	max-width: 100%;
 	width: 100%;
 
 	&__hero {

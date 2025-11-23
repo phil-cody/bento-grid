@@ -1,5 +1,7 @@
 @use 'importer' as i;
 @use 'components' as *;
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
 
 .bento {
 	display: grid;

@@ -3,7 +3,7 @@
 .write-your-content {
 	@include i.block;
 	width: 100%;
-	max-width: 343px;
+	max-width: 100%;
 	height: 100%;
 	justify-self: stretch;
 	align-self: stretch;
@@ -49,7 +49,7 @@
 
 					.user-message {
 						@include i.block;
-						background-color: #FFEDED;
+						background-color: i.$red-100;
 						text-align: right;
 						padding: 7px 16px;
 					}
@@ -75,7 +75,7 @@
 
 					.ai-message {
 						@include i.block;
-						background-color: #FCEBD1;
+						background-color: i.$orange-100;
 						text-align: left;
 						padding: 7px 16px;
 						overflow: hidden;

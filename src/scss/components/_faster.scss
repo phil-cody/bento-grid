@@ -2,8 +2,7 @@
 
 .faster {
 	@include i.block;
-	max-width: 343px;
-	width: 343px;
+	max-width: 100%;
 	padding: 24px;
 
 	&__text {
